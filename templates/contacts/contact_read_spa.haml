@@ -1,0 +1,7 @@
+-extends "contacts/contact_read.html" 
+
+-block subtitle
+-block content
+  %temba-tabs.flex-grow
+    %temba-tab(icon="message-square" name="Chat")
+      %temba-contact-chat(contact="{{object.uuid}}" monitor="true")

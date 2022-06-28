@@ -1,0 +1,140 @@
+body {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
+  border-radius: 0.5rem;
+}
+temba-textinput input:focus {
+  box-shadow: var(--widget-box-shadow-focused), 0 0 0 1px var(--color-focus) !important;
+  border-radius: var(--curvature-widget);
+}
+form.smartmin-form .form-actions {
+  margin-bottom: 0px;
+}
+form.smartmin-form .alert-error {
+  background: rgba(255, 181, 181, 0.17);
+  border: none;
+  border-left: 0px solid var(--color-error);
+  color: var(--color-error);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+form.smartmin-form ul.errorlist {
+  font-size: 12px;
+}
+form.smartmin-form ul.errorlist li {
+  text-shadow: none;
+  line-height: inherit;
+}
+.table td {
+  vertical-align: inherit;
+  line-height: inherit;
+}
+#header {
+  padding: 50px;
+}
+#gear-container {
+  display: flex;
+  height: inherit;
+}
+#gear-container .gear-menu .glyph {
+  color: #a0a0a0;
+}
+#gear-container .dropdown-menu {
+  min-width: 158px;
+  margin-top: 9px;
+  left: -120px !important;
+}
+.dropdown-menu {
+  min-width: 250px;
+  margin-top: 5px;
+}
+.label-menu.dropdown-menu a {
+  white-space: normal;
+}
+.label-menu .glyph {
+  color: inherit;
+}
+.alert {
+  background: #f7f7f7;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+  border-radius: 0px;
+  border-bottom: solid 1px #e2e2e2;
+  padding: 8px 22px;
+  margin: 0;
+}
+#pjax {
+  width: 100%;
+}
+.page-content {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#menu *,
+.org-header *,
+.ReactModalPortal *,
+#rp-flow-editor *,
+#legacy-editor *,
+.modal *,
+#menu ::before,
+.org-header ::before,
+.ReactModalPortal ::before,
+#rp-flow-editor ::before,
+#legacy-editor ::before,
+.modal ::before,
+#menu ::after,
+.org-header ::after,
+.ReactModalPortal ::after,
+#rp-flow-editor ::after,
+#legacy-editor ::after,
+.modal ::after {
+  box-sizing: content-box !important;
+}
+#menu::before,
+.org-header::before,
+.ReactModalPortal::before,
+#rp-flow-editor::before,
+#legacy-editor::before,
+.modal::before,
+#menu::after,
+.org-header::after,
+.ReactModalPortal::after,
+#rp-flow-editor::after,
+#legacy-editor::after,
+.modal::after {
+  box-sizing: content-box !important;
+}
+.ReactModalPortal {
+  line-height: initial;
+}
+.ReactModalPortal p {
+  margin-block-end: 14px;
+  margin-block-start: 10px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+#legacy-editor,
+.modal {
+  color: #333;
+  line-height: 20px;
+}
+#legacy-editor select,
+.modal select {
+  padding-left: 6px;
+}
+#legacy-editor p,
+.modal p {
+  margin-block-end: 10px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+#legacy-editor .title,
+.modal .title {
+  margin-bottom: 0px;
+}

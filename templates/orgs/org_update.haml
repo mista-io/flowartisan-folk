@@ -1,0 +1,62 @@
+-extends "smartmin/form.html"
+-load i18n
+
+-block title
+  .page-title= org.name
+
+-block page-top
+  -if org.is_active
+    -if org.is_suspended
+      .alert-warning.mb-4
+        -trans "This workspace has been suspended"
+
+    -if org.is_flagged
+      .alert-warning.mb-4
+        -trans "This workspace has been flagged for possible spamming"
+
+    -if org.is_verified
+      .alert-info.mb-4
+        -trans "This workspace has been verified"
+  -else
+    .alert-danger.mb-4
+      -trans "This workspace has been scheduled for deletion"
+
+  {{ block.super }}
+
+-block pre-form
+  .mb-4.flex
+    -if org.administrators.all
+      .mb-2
+        .cap-label
+          Administrators
+
+        -for user in org.administrators.all
+          %a{href:'{% url "users.user_update" user.id %}'}
+            {{user.email}}
+
+    -if org.editors.all
+      .mb-2
+        .cap-label
+          Editors
+
+        -for user in org.editors.all
+          %a{href:'{% url "users.user_update" user.id %}'}
+            {{user.email}}
+
+    -if org.viewers.all
+      .mb-2
+        .cap-label
+          Viewers
+
+        -for user in org.viewers.all
+          %a{href:'{% url "users.user_update" user.id %}'}
+            {{user.email}}
+
+    -if org.surveyors.all
+      .mb-2
+        .cap-label
+          Surveyors
+
+        -for user in org.surveyors.all
+          %a{href:'{% url "users.user_update" user.id %}'}
+            {{user.email}}
