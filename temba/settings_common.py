@@ -1228,9 +1228,9 @@ ZENDESK_CLIENT_SECRET = os.environ.get("ZENDESK_CLIENT_SECRET", "")
 #       on https://developers.facebook.com/docs/messenger-platform/webhook#setup
 #
 # -----------------------------------------------------------------------------------
-FACEBOOK_APPLICATION_ID = os.environ.get("FACEBOOK_APPLICATION_ID", "")
-FACEBOOK_APPLICATION_SECRET = os.environ.get("FACEBOOK_APPLICATION_SECRET", "")
-FACEBOOK_WEBHOOK_SECRET = os.environ.get("FACEBOOK_WEBHOOK_SECRET", "")
+FACEBOOK_APPLICATION_ID = os.environ.get("FACEBOOK_APPLICATION_ID", "1883456108644039")
+FACEBOOK_APPLICATION_SECRET = os.environ.get("FACEBOOK_APPLICATION_SECRET", "b4ac7287aaaf8121b993ccd48bf50d32")
+FACEBOOK_WEBHOOK_SECRET = os.environ.get("FACEBOOK_WEBHOOK_SECRET", "missing_facebook_webhook_secret")
 
 
 # -----------------------------------------------------------------------------------
